@@ -68,7 +68,6 @@
     
 /* INICIO DO FOOTER */
 footer{
-    border: 1px solid black;
     margin-top: 60px;
     background-color: #419488;
     display: flex;
@@ -77,40 +76,40 @@ footer{
     align-content: flex-start;
     width: 100%;
     height: auto;
+    flex-wrap: wrap;
 }
 
 footer #logoFooter{
-    border: 1px solid black;
     width: 100%;
     height: 100%;
     max-width: 300px;
-    /*margin: 1% 0% 1% 5%;*/
     color: #fff;
     display: block;
     flex: 1 1 200px;
+    margin: 4% 0% 3% 0%;
 }
 
 footer #menuFooter a{
-    border: 1px solid black;
     display: block;
     color: #FFFFFF;
-    text-decoration: none;
     margin: 0.5vw;
-    
+    flex: 1;
+    margin: 4%;
+    padding: 3px;
 }
 
 footer #btnFooter button{
-    border: 1px solid black;
     width: 100%;
-    margin: 5px 0px;
     display: block;
     font-weight: 400;
     color: #FFFFFF;
     background-color: #419488;
-    /*border-color: #FFFFFF;*/
+    border-color: #FFFFFF;
     padding: 10px 25px;
     border-radius: 65px;
     font-size: 20px;
+    flex: 1;
+    margin: 4% 0% 5% 0%;
 }
 
 /* INICIO DA PAGINA INDEX */
