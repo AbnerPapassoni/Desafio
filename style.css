@@ -19,11 +19,7 @@
   /* INICIO DO HEADER */
   header {
     margin: 0px;
-    padding: 0px;
     width: 100%;
-    height: auto;
-    left: 0px;
-    top: 0px;
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
@@ -63,7 +59,10 @@
   @media (max-width: 600px) {
     header #menu a {
       font-size: 3vw;
+      margin: 1% 1% 1% 0%;
     }
+
+
   }
   
   /* INICIO DO FOOTER */
@@ -390,8 +389,7 @@
   }
   
   .cinza {
-    background-color: #C4C4C4;
-    ;
+    background-color: #C4C4C4;;
     min-height: 150px;
     height: 15vw;
     width: 95%;
@@ -560,7 +558,6 @@
     .imgCurso{
       width: 80%;
     }
-
   }
   
   /* FIM DA PAGINA CURSOS */
@@ -571,14 +568,19 @@
   
   #introBlog {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-    padding: 0px 15%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 80%;
   }
   
   #txtIntroBlog {
-    width: 33%;
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 300px;
   }
   
   #introBlog h1 {
@@ -586,6 +588,8 @@
     font-weight: 700;
     font-size: 47px;
     color: #009688;
+    width: 100%;
+    display: flex;
   }
   
   #introBlog p {
@@ -595,26 +599,48 @@
     display: flex;
     align-items: center;
     color: #000000;
+    width: 100%;
+  }
+
+  #imgBlog{
+    width: 40%;
+    display: flex;
+  }
+
+  @media (max-width: 600px){
+    #imgBlog{
+      width: 100%;
+    }
+
+    #txtIntroBlog {
+      width: 100%;
+    }
   }
   
   /* INICIO DO POST */
   
   #containerPost {
-    margin: 200px 0px;
-    display: grid;
-    grid-template-columns: repeat(2, 40%);
-    grid-template-rows: repeat(3, 200px);
-    grid-column-gap: 50px;
-    grid-row-gap: 200px;
+    width: 80%;
     justify-content: center;
     align-items: center;
-    padding: 0px 5%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+    row-gap: 50px;
   }
-  
+   
+  .posts {
+    width: 42%;
+  }
+
   .posts h3 {
+    width: 100%;
     margin-top: 20px;
     font-weight: 500;
-    font-size: 30px;
+    font-size: 25px;
     display: flex;
     align-items: center;
     color: #ff4081;
@@ -624,11 +650,17 @@
     margin-top: 20px;
     font-weight: 300;
     font-size: 17px;
-    line-height: 20px;
     display: flex;
     align-items: center;
     color: #000000;
-    width: 80%;
+    width: 95%;
+    text-align: justify;
+  }
+
+  @media (max-width: 600px){
+    .posts {
+      width: 95%;
+    }
   }
   
   /* FIM DA PAGINA BLOG */
@@ -725,7 +757,6 @@
     #form {
       width: 90%;
     }
-
   }
   
   /* FIM DA PAGINA CONTATO */
@@ -940,5 +971,4 @@
     #tituloPostCursos{
       text-align: center;
     }
-
   }
